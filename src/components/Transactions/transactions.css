@@ -1,0 +1,78 @@
+.table-wrapper {
+    height: 70%;
+    width: 55%;
+    background-color: rgba(2, 0, 24, 0.13);
+    border-radius: 15px;
+    position: relative;
+  }
+  
+  .table {
+    width: 100%;
+    display: block;
+    overflow: hidden;
+    table-layout: fixed;
+    border-collapse: collapse;
+    border-radius: 10px;
+    white-space: nowrap;
+    margin: auto;
+    table-layout: auto;
+    overflow-x: auto;
+  }
+  
+  .table thead {
+    background-color: #222b33;
+    color: grey;
+  }
+  
+  .table th,
+  .table td {
+    padding: 0.8rem;
+    width: 33%;
+    text-align: start;
+  }
+  
+  .table td {
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  .table tbody tr{
+    color: lightgrey;
+  }
+  
+  .table tbody tr:hover {
+    background-color: #eee;
+    color: black;
+  }
+  
+  /* .expand {
+    width: 90%;
+    text-align: start;
+  } */
+  
+  .label {
+    border-radius: 3px;
+    padding: 0.3rem;
+    color: white;
+  }
+  
+  .label-income {
+    color: #42a942;
+  }
+  
+  .label-expense {
+    color: #d9534f;
+  }
+  
+  .actions {
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  .actions svg {
+    cursor: pointer;
+  }
+  
+  .delete-btn {
+    color: #e10d05;
+  }
