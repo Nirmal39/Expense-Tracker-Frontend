@@ -31,7 +31,7 @@ export const GlobalProvider = ({children}) => {
             setError(err.response.data.message)
             toast.error(err.response.data.message)
         })
-        toast("Category Added Succesfully")
+        toast.success("Category Added Succesfully")
         getCategory()
     }
     const getCategory = async ()=>{
@@ -41,7 +41,7 @@ export const GlobalProvider = ({children}) => {
     const deleteCategory = async(id)=>{
         const res  = await axios.delete(`https://nodejs-income-expense.onrender.com/api/v1/category/${id}`,{withCredentials: true})
         getCategory()
-        toast("Category Deleted Succesfully")
+        toast.success("Category Deleted Succesfully")
     }
 
 
@@ -56,9 +56,9 @@ export const GlobalProvider = ({children}) => {
           })
             .catch((err) =>{
                 setError(err.response.data.message)
-                toast(err.response.data.message)
+                toast.error(err.response.data.message)
             })
-        toast("Income Added Sucesfully")
+        toast.success("Income Added Sucesfully")
         getIncomes()
     }
 
@@ -70,7 +70,7 @@ export const GlobalProvider = ({children}) => {
     const deleteIncome = async (id) => {
         const res  = await axios.delete(`${BASE_URL}delete-income/${id}`,{withCredentials: true})
         getIncomes()
-        toast("Income Deleted Sucesfully")
+        toast.success("Income Deleted Sucesfully")
     }
 
     const totalIncome = () => {
@@ -94,9 +94,9 @@ export const GlobalProvider = ({children}) => {
           })
             .catch((err) =>{
                 setError(err.response.data.message)
-                toast(err.response.data.message)
+                toast.error(err.response.data.message)
             })
-        toast("Expense Added Sucesfully")
+        toast.success("Expense Added Sucesfully")
         getExpenses()
     }
 
@@ -108,7 +108,7 @@ export const GlobalProvider = ({children}) => {
     const deleteExpense = async (id) => {
         const res  = await axios.delete(`${BASE_URL}delete-expense/${id}`,{withCredentials: true})
         getExpenses()
-        toast("Expense Deleted Succesfully")
+        toast.success("Expense Deleted Succesfully")
     }
 
     const totalExpenses = () => {
