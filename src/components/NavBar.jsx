@@ -54,12 +54,12 @@ function NavBar(props) {
               </MobileIcon>
               <NavMenu onClick={handleClick} click={click} >
                 <NavItem>
-                  <NavLinks to='/'>
+                  <NavLinks to='/about'>
                     About Us
                   </NavLinks>
                 </NavItem>
                 <NavItem>
-                  <NavLinks to='/'>
+                  <NavLinks to='/contact'>
                     Contact us
                   </NavLinks>
                 </NavItem>

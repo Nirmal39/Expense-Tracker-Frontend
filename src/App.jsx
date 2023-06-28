@@ -7,6 +7,8 @@ import { Context, server } from "./main";
 import axios from "axios";
 import Main from './pages/Main'
 import { useGlobalContext } from './Context/globalContext';
+import About from './pages/About';
+import Contact from './pages/Contact';
 
 
 function App() {
@@ -63,6 +65,8 @@ function App() {
             openModalLogin={openModalLogin} 
             closeModalLogin={closeModalLogin}/>}/>
             <Route path="/" element ={<Main/>}/>
+            <Route path="/contact" element ={<Contact/>}/>
+            <Route path="/about" element ={<About/>}/>
           </Routes>
           <Toaster></Toaster>
         </Router>
